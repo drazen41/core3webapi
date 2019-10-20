@@ -95,11 +95,11 @@ function _displayItems(data) {
         //isCompleteCheckbox.checked = item.isComplete;
 
         let editButton = button.cloneNode(false);
-        editButton.innerText = 'Edit';
+        editButton.innerText = 'Ažuriraj';
         editButton.setAttribute('onclick', `displayEditForm(${item.id})`);
 
         let deleteButton = button.cloneNode(false);
-        deleteButton.innerText = 'Delete';
+        deleteButton.innerText = 'Obriši';
         deleteButton.setAttribute('onclick', `deleteItem(${item.id})`);
 
         let tr = tBody.insertRow();
