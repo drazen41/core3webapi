@@ -8,22 +8,22 @@
 <body>
     <a href="/drzava.html">Idi na državu</a><br />
     <h1>Naselje CRUD</h1>
-    <h3>Add</h3>
+    <h3>Unos</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
         <input type="text" id="add-name" placeholder="Novo naselje"><br />
         <input type="text" id="add-pbr" placeholder="Poštanski broj"><br />
         <select id="ddlDrzave"></select><br />
-        <input type="submit" value="Add">
+        <input type="submit" value="Unesi">
     </form>
 
     <div id="editForm">
-        <h3>Edit</h3>
+        <h3>Ažuriranje</h3>
         <form action="javascript:void(0);" onsubmit="updateItem()">
             <input type="hidden" id="edit-id">
             <input type="text" id="edit-name">
             <input type="text" id="edit-pbr">
             <select id="edit-drzave"></select><br />
-            <input type="submit" value="Save">
+            <input type="submit" value="Ažuriraj">
             <a onclick="closeInput()" aria-label="Close">&#10006;</a>
         </form>
     </div>
